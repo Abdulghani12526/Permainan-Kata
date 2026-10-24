@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permainan Kata Sederhana - Tebak Acak Kata</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tebak Kata Acak</h1>
+        <p>Susun huruf acak di bawah ini menjadi kata yang benar!</p>
+        
+        <div class="word-box">
+            <span id="scrambled-word">...</span>
+        </div>
+
+        <p class="hint">Soal: <span id="hint-text">-</span></p>
+
+        <form id="game-form">
+            <input type="text" id="user-input" placeholder="Ketik tebakanmu..." required autocomplete="off">
+            <button type="submit">Cek Jawaban</button>
+        </form>
+
+        <p id="message"></p>
+        <button id="next-btn" class="hidden">Kata Selanjutnya ➡️</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
